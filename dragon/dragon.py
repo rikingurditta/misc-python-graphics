@@ -1,10 +1,12 @@
 import turtle as t
 
-ITERATIONS = 20
+ITERATIONS = 23
+SCALE = 4
 
 t.hideturtle()
 t.color('red')
 t.speed(0)
+
 all_headings = [0]
 headings = [0]
 for _ in range(ITERATIONS):
@@ -12,7 +14,7 @@ for _ in range(ITERATIONS):
     temp.reverse()
     for h in headings:
         t.setheading(h)
-        t.forward(4)
+        t.forward(SCALE)
     headings = temp
     all_headings.extend(headings)
 t.done()
