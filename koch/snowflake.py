@@ -9,16 +9,13 @@ t.speed(0)
 
 def draw_koch(p1: t.Vec2D, p2: t.Vec2D, depth: int) -> None:
     diff = p2 - p1
-    b1 = p1 + diff * (1 / 3)
-    b2 = p2 - diff * (1 / 3)
-    apex = b1 + diff.rotate(60) * (1 / 3)
+    b1 = p1 + diff * (1/3)
+    b2 = p2 - diff * (1/3)
+    apex = b1 + diff.rotate(60) * (1/3)
     if depth == 0:
         t.penup()
-        t.goto(p1[0], p1[1])
+        t.goto(p1)
         t.pendown()
-        t.goto(b1)
-        t.goto(apex)
-        t.goto(b2)
         t.goto(p2)
     else:
         draw_koch(p1, b1, depth - 1)
@@ -27,8 +24,8 @@ def draw_koch(p1: t.Vec2D, p2: t.Vec2D, depth: int) -> None:
         draw_koch(b2, p2, depth - 1)
 
 
-DEPTH = 4
-SCALE = 300
+DEPTH = 5
+SCALE = 256
 
 t.Vec2D(-1, -sqrt(3) / 3)
 
