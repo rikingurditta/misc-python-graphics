@@ -8,7 +8,7 @@ Misc Python thingies with visual output. Just fractaly stuff right now.
 
 ### Sierpinski triangle
 
-![Sierpinski triangle to depth 7](/triangle/triangle-d7-s300.png)
+![Sierpinski triangle to depth 7](/sierpinski/triangle-d7-s300.png)
 
 ### Dragon curve
 
