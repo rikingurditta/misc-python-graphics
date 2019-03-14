@@ -27,7 +27,7 @@ def draw_koch(p1: t.Vec2D, p2: t.Vec2D, depth: int) -> None:
         draw_koch(b2, p2, depth - 1)
 
 
-DEPTH = 1
+DEPTH = 4
 SCALE = 300
 
 t.Vec2D(-1, -sqrt(3) / 3)
