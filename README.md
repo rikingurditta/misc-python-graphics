@@ -1,6 +1,6 @@
 # Miscellaneous Python Graphics
 
-Misc Python thingies with visual output. Just fractaly stuff right now.
+Misc Python thingies with visual output.
 
 ### Koch snowflake
 
